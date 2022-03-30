@@ -31,7 +31,6 @@ namespace NormativeApp.Database.DataSeed.RecipeSeed
                     Name = recipeNames[i % 7] + i.ToString(),
                     Description = "Lorem Ipsum",
                     CategoryId = random.Next(1, 8),
-                    CreatedDate = DateTime.Now,
                     TotalCost = (decimal)(random.Next(1, 100) + random.NextDouble())
                 });
             }

@@ -2,6 +2,7 @@
 
 namespace NormativeApp.Core.Dtos.Sql
 {
+
     [Keyless]
     public class MostUsedIngredient
     {

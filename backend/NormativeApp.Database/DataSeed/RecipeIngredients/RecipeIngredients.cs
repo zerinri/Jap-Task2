@@ -30,7 +30,6 @@ namespace NormativeApp.Database.DataSeed.RecipeIngredients
                     IngredientId = random.Next(1, 10),
                     Quantity = (decimal)Math.Round(random.Next(1, 50) + random.NextDouble(), 2),
                     UnitMeasure = unitMeasures[random.Next(0, 4)],
-                    CreatedDate = DateTime.Now,
                 });
             }
             modelBuilder.Entity<RecipeIngredient>().HasData(recipeIngredients);

@@ -16,8 +16,11 @@ namespace NormativeApp.Database.Data
         }
 
         public DbSet<MostUsedIngredient> MostUsedIngredients { get; set; }
+
         public DbSet<GetRecipesByCategoryName> GetRecipesByCategoryName { get; set; }
+
         public DbSet<GetRecipesWithIngredientCount> GetRecipesWithIngredientCount { get; set; }
+
 
         public DbSet<User> Users { get; set; }
 
@@ -31,6 +34,20 @@ namespace NormativeApp.Database.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Category>().Property(b => b.CreatedDate).HasDefaultValueSql("getdate()");
+            modelBuilder.Entity<Recipe>().Property(b => b.CreatedDate).HasDefaultValueSql("getdate()");
+            modelBuilder.Entity<RecipeIngredient>().Property(b => b.CreatedDate).HasDefaultValueSql("getdate()");
+
+            modelBuilder.Entity<MostUsedIngredient>(
+                eb => eb.ToView("MostUsedIng"));
+
+            modelBuilder.Entity<GetRecipesByCategoryName>(
+             eb => eb.ToView("GetRecipesByCategoryName"));
+
+            modelBuilder.Entity<GetRecipesWithIngredientCount>(
+             eb => eb.ToView("GetRecipesWithIngredientCount"));
+
+
             modelBuilder.Entity<RecipeIngredient>()
                 .HasOne(b => b.Recipe)
                 .WithMany(i => i.RecipeIngredients)
