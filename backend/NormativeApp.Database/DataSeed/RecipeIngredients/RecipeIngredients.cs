@@ -28,7 +28,7 @@ namespace NormativeApp.Database.DataSeed.RecipeIngredients
                     Id = i,
                     RecipeId = random.Next(1, 50),
                     IngredientId = random.Next(1, 10),
-                    Quantity = (decimal)Math.Round(random.Next(1, 50) + random.NextDouble(), 2),
+                    Quantity = random.Next(10, 100),
                     UnitMeasure = unitMeasures[random.Next(0, 4)],
                 });
             }

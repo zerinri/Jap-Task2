@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace NormativeApp.Services.Services
 {
-    public class SqlService : ISqlService
+    public class RecipeReportsService : IRecipeReports
     {
         private readonly DataContext _context;
         private readonly IMapper _mapper;
-        public SqlService(IMapper mapper, DataContext context)
+        public RecipeReportsService(IMapper mapper, DataContext context)
         {
             _context = context;
             _mapper = mapper;

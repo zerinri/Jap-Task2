@@ -6,10 +6,10 @@ namespace NormativeApp.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class SqlController : ControllerBase
+    public class RecipeReportsController : ControllerBase
     {
-        private readonly ISqlService _sqlService;
-        public SqlController(ISqlService sqlService)
+        private readonly IRecipeReports _sqlService;
+        public RecipeReportsController(IRecipeReports sqlService)
         {
             _sqlService = sqlService;
         }

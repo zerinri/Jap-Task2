@@ -7,8 +7,6 @@ namespace NormativeApp.Core.Entities
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public decimal TotalCost { get; set; }
-
         public int CategoryId { get; set; }
         public Category Category { get; set; }
 

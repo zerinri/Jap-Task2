@@ -53,20 +53,21 @@ namespace NormativeApp.Tests
                 {
                     new AddRecipeIngredientDto
                     {
-                        IngredientId=1,
-                        Quantity=10,
-                        UnitMeasure=UnitMeasureEnum.g
+                        IngredientId = 1,
+                        Quantity = 10,
+                        UnitMeasure = UnitMeasureEnum.g
                     },
-                      new AddRecipeIngredientDto
+                    new AddRecipeIngredientDto
                    {
-                       IngredientId=1,
-                       Quantity=10,
-                       UnitMeasure=UnitMeasureEnum.kg
+                       IngredientId = 1,
+                       Quantity = 10,
+                       UnitMeasure = UnitMeasureEnum.kg
                     }
                 }
             };
             Assert.ThrowsAsync<ArgumentException>(async () => await _recipeService.AddRecipeWithIngredients(request));
         }
+
         [Test]
         public void AddRecipe_AddingTwoSameIngredientsWithOneDifferent_CheckIfIngredientsAreUnique()
         {
@@ -79,26 +80,27 @@ namespace NormativeApp.Tests
                 {
                     new AddRecipeIngredientDto
                     {
-                        IngredientId=1,
-                        Quantity=10,
-                        UnitMeasure=UnitMeasureEnum.g
+                        IngredientId = 1,
+                        Quantity = 10,
+                        UnitMeasure = UnitMeasureEnum.g
                     },
-                      new AddRecipeIngredientDto
+                    new AddRecipeIngredientDto
                    {
-                       IngredientId=1,
-                       Quantity=10,
-                       UnitMeasure=UnitMeasureEnum.kg
+                        IngredientId = 1,
+                        Quantity = 10,
+                        UnitMeasure = UnitMeasureEnum.kg
                     },
-                       new AddRecipeIngredientDto
+                    new AddRecipeIngredientDto
                    {
-                       IngredientId=2,
-                       Quantity=10,
-                       UnitMeasure=UnitMeasureEnum.kg
+                        IngredientId = 2,
+                        Quantity = 10,
+                        UnitMeasure = UnitMeasureEnum.kg
                     }
                 }
             };
             Assert.ThrowsAsync<ArgumentException>(async () => await _recipeService.AddRecipeWithIngredients(request));
         }
+
         [Test]
         public void AddRecipe_AddingFourSameIngredients_CheckIfIngredientsAreUnique()
         {
@@ -111,25 +113,26 @@ namespace NormativeApp.Tests
                 {
                     new AddRecipeIngredientDto
                     {
-                        IngredientId=1,
-                        Quantity=10,
+                        IngredientId = 1,
+                        Quantity = 10,
                         UnitMeasure=UnitMeasureEnum.g
                     },
-                      new AddRecipeIngredientDto
+                    new AddRecipeIngredientDto
                    {
-                       IngredientId=1,
-                       Quantity=10,
+                       IngredientId = 1,
+                       Quantity = 10,
                        UnitMeasure=UnitMeasureEnum.kg
                     },
-                       new AddRecipeIngredientDto
+                    new AddRecipeIngredientDto
                    {
-                       IngredientId=2,
-                       Quantity=10,
+                       IngredientId = 2,
+                       Quantity = 10,
                        UnitMeasure=UnitMeasureEnum.kg
-                    },    new AddRecipeIngredientDto
+                    },
+                    new AddRecipeIngredientDto
                    {
-                       IngredientId=2,
-                       Quantity=10,
+                       IngredientId = 2,
+                       Quantity = 10,
                        UnitMeasure=UnitMeasureEnum.kg
                     }
                 }
@@ -157,12 +160,11 @@ namespace NormativeApp.Tests
             };
 
             await _recipeService.AddRecipeWithIngredients(newRecipe);
-
             var databaseRecipe = _context.Recipes.FirstOrDefault(r => r.Name == newRecipe.Name);
 
+            Assert.True(newRecipe.RecipeIngredients.Any());
             Assert.AreEqual(newRecipe.Name, databaseRecipe.Name);
             Assert.AreEqual(newRecipe.Description, databaseRecipe.Description);
-            Assert.True(newRecipe.RecipeIngredients.Any());
         }
 
         [Test]
@@ -181,7 +183,7 @@ namespace NormativeApp.Tests
                        Quantity = 1,
                        UnitMeasure = UnitMeasureEnum.kg,
                    },
-                     new AddRecipeIngredientDto
+                   new AddRecipeIngredientDto
                    {
                        IngredientId = 2,
                        Quantity = 1,
@@ -191,12 +193,12 @@ namespace NormativeApp.Tests
             };
 
             await _recipeService.AddRecipeWithIngredients(newRecipe);
-
             var databaseRecipe = _context.Recipes.FirstOrDefault(r => r.Name == newRecipe.Name);
 
+            Assert.True(newRecipe.RecipeIngredients.Any());
+            Assert.AreEqual(newRecipe.RecipeIngredients.Count(), 2);
             Assert.AreEqual(newRecipe.Name, databaseRecipe.Name);
             Assert.AreEqual(newRecipe.Description, databaseRecipe.Description);
-            Assert.True(newRecipe.RecipeIngredients.Any());
         }
 
         [TestCase(0)]

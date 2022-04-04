@@ -20,27 +20,27 @@ namespace NormativeApp.Services.Helpers
         public static decimal RecipeTotalCost(Recipe recipe)
         {
       
-            var cost = recipe.RecipeIngredients.Select(i => new GetTotalCostDto
+            var costDto = recipe.RecipeIngredients.Select(i => new GetTotalCostDto
             {
                 BaseQuantity = QtyConvert(i.Ingredient.PurchaseQuantity, i.Ingredient.PurchaseUnitMeasure),
                 UsedQuantity = QtyConvert(i.Quantity, i.UnitMeasure),
                 Price = i.Ingredient.PurchasePrice
             });
 
-            decimal totalCost = cost.Sum(c => c.UsedQuantity * (c.Price / c.BaseQuantity));
+            decimal totalCost = costDto.Sum(c => c.UsedQuantity * (c.Price / c.BaseQuantity));
             return totalCost;
         }
         public static decimal IngredientTotalCost(RecipeIngredient recipeIngredient)
         {
 
-            var cost = new GetTotalCostDto()
+            var costDto = new GetTotalCostDto()
             {
                 BaseQuantity = QtyConvert(recipeIngredient.Ingredient.PurchaseQuantity, recipeIngredient.Ingredient.PurchaseUnitMeasure),
                 UsedQuantity = QtyConvert(recipeIngredient.Quantity, recipeIngredient.UnitMeasure),
                 Price = recipeIngredient.Ingredient.PurchasePrice
             };
 
-            decimal totalCost = cost.UsedQuantity * (cost.Price / cost.BaseQuantity);
+            decimal totalCost = costDto.UsedQuantity * (costDto.Price / costDto.BaseQuantity);
             return totalCost;
         }
     }

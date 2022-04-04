@@ -271,9 +271,6 @@ namespace NormativeApp.Database.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("TotalCost")
-                        .HasColumnType("decimal(18,2)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -284,20 +281,18 @@ namespace NormativeApp.Database.Migrations
                         new
                         {
                             Id = 1,
-                            CategoryId = 7,
+                            CategoryId = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita1",
-                            TotalCost = 6.64578542050244m
+                            Name = "Pita1"
                         },
                         new
                         {
                             Id = 2,
-                            CategoryId = 5,
+                            CategoryId = 3,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Musaka2",
-                            TotalCost = 47.3568257071808m
+                            Name = "Musaka2"
                         },
                         new
                         {
@@ -305,98 +300,87 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Ustipci3",
-                            TotalCost = 40.2214907972242m
+                            Name = "Ustipci3"
                         },
                         new
                         {
                             Id = 4,
-                            CategoryId = 4,
+                            CategoryId = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Palacinke4",
-                            TotalCost = 79.3339044346166m
+                            Name = "Palacinke4"
                         },
                         new
                         {
                             Id = 5,
-                            CategoryId = 5,
+                            CategoryId = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Spagete5",
-                            TotalCost = 15.7656881929215m
+                            Name = "Spagete5"
                         },
                         new
                         {
                             Id = 6,
-                            CategoryId = 3,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Makarone6",
-                            TotalCost = 5.51331974450188m
+                            Name = "Makarone6"
                         },
                         new
                         {
                             Id = 7,
-                            CategoryId = 4,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pizza7",
-                            TotalCost = 87.3800784979854m
+                            Name = "Pizza7"
                         },
                         new
                         {
                             Id = 8,
-                            CategoryId = 5,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita8",
-                            TotalCost = 98.7749801607686m
+                            Name = "Pita8"
                         },
                         new
                         {
                             Id = 9,
-                            CategoryId = 4,
+                            CategoryId = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Musaka9",
-                            TotalCost = 16.0458055618432m
+                            Name = "Musaka9"
                         },
                         new
                         {
                             Id = 10,
-                            CategoryId = 1,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Ustipci10",
-                            TotalCost = 71.6665302932572m
+                            Name = "Ustipci10"
                         },
                         new
                         {
                             Id = 11,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Palacinke11",
-                            TotalCost = 69.919637619946m
+                            Name = "Palacinke11"
                         },
                         new
                         {
                             Id = 12,
-                            CategoryId = 7,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Spagete12",
-                            TotalCost = 36.8851583883563m
+                            Name = "Spagete12"
                         },
                         new
                         {
                             Id = 13,
-                            CategoryId = 6,
+                            CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Makarone13",
-                            TotalCost = 21.6121651351509m
+                            Name = "Makarone13"
                         },
                         new
                         {
@@ -404,35 +388,31 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pizza14",
-                            TotalCost = 18.3817661024545m
+                            Name = "Pizza14"
                         },
                         new
                         {
                             Id = 15,
-                            CategoryId = 1,
+                            CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita15",
-                            TotalCost = 16.3156293320077m
+                            Name = "Pita15"
                         },
                         new
                         {
                             Id = 16,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Musaka16",
-                            TotalCost = 30.7129034915533m
+                            Name = "Musaka16"
                         },
                         new
                         {
                             Id = 17,
-                            CategoryId = 7,
+                            CategoryId = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Ustipci17",
-                            TotalCost = 85.2455402110915m
+                            Name = "Ustipci17"
                         },
                         new
                         {
@@ -440,17 +420,15 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Palacinke18",
-                            TotalCost = 78.6573787073872m
+                            Name = "Palacinke18"
                         },
                         new
                         {
                             Id = 19,
-                            CategoryId = 4,
+                            CategoryId = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Spagete19",
-                            TotalCost = 26.0717335604465m
+                            Name = "Spagete19"
                         },
                         new
                         {
@@ -458,35 +436,31 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Makarone20",
-                            TotalCost = 15.3192273566123m
+                            Name = "Makarone20"
                         },
                         new
                         {
                             Id = 21,
-                            CategoryId = 3,
+                            CategoryId = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pizza21",
-                            TotalCost = 86.6838741789962m
+                            Name = "Pizza21"
                         },
                         new
                         {
                             Id = 22,
-                            CategoryId = 4,
+                            CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita22",
-                            TotalCost = 44.0966255558173m
+                            Name = "Pita22"
                         },
                         new
                         {
                             Id = 23,
-                            CategoryId = 3,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Musaka23",
-                            TotalCost = 70.7898888912936m
+                            Name = "Musaka23"
                         },
                         new
                         {
@@ -494,44 +468,39 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Ustipci24",
-                            TotalCost = 53.8398340157419m
+                            Name = "Ustipci24"
                         },
                         new
                         {
                             Id = 25,
-                            CategoryId = 7,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Palacinke25",
-                            TotalCost = 70.7057249386356m
+                            Name = "Palacinke25"
                         },
                         new
                         {
                             Id = 26,
-                            CategoryId = 7,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Spagete26",
-                            TotalCost = 64.8193160909318m
+                            Name = "Spagete26"
                         },
                         new
                         {
                             Id = 27,
-                            CategoryId = 4,
+                            CategoryId = 2,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Makarone27",
-                            TotalCost = 19.8556055458522m
+                            Name = "Makarone27"
                         },
                         new
                         {
                             Id = 28,
-                            CategoryId = 3,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pizza28",
-                            TotalCost = 23.8613103962789m
+                            Name = "Pizza28"
                         },
                         new
                         {
@@ -539,71 +508,63 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 3,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita29",
-                            TotalCost = 40.9142497190806m
+                            Name = "Pita29"
                         },
                         new
                         {
                             Id = 30,
-                            CategoryId = 2,
+                            CategoryId = 3,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Musaka30",
-                            TotalCost = 34.096263727218m
+                            Name = "Musaka30"
                         },
                         new
                         {
                             Id = 31,
-                            CategoryId = 6,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Ustipci31",
-                            TotalCost = 94.0662834532868m
+                            Name = "Ustipci31"
                         },
                         new
                         {
                             Id = 32,
-                            CategoryId = 3,
+                            CategoryId = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Palacinke32",
-                            TotalCost = 46.3083552519364m
+                            Name = "Palacinke32"
                         },
                         new
                         {
                             Id = 33,
-                            CategoryId = 5,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Spagete33",
-                            TotalCost = 51.7221134331646m
+                            Name = "Spagete33"
                         },
                         new
                         {
                             Id = 34,
-                            CategoryId = 2,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Makarone34",
-                            TotalCost = 85.5946054093514m
+                            Name = "Makarone34"
                         },
                         new
                         {
                             Id = 35,
-                            CategoryId = 7,
+                            CategoryId = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pizza35",
-                            TotalCost = 3.32411325132666m
+                            Name = "Pizza35"
                         },
                         new
                         {
                             Id = 36,
-                            CategoryId = 3,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita36",
-                            TotalCost = 79.0832716529646m
+                            Name = "Pita36"
                         },
                         new
                         {
@@ -611,8 +572,7 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Musaka37",
-                            TotalCost = 53.6170164736067m
+                            Name = "Musaka37"
                         },
                         new
                         {
@@ -620,17 +580,15 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 2,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Ustipci38",
-                            TotalCost = 41.961828815733m
+                            Name = "Ustipci38"
                         },
                         new
                         {
                             Id = 39,
-                            CategoryId = 4,
+                            CategoryId = 2,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Palacinke39",
-                            TotalCost = 97.634757450146m
+                            Name = "Palacinke39"
                         },
                         new
                         {
@@ -638,98 +596,87 @@ namespace NormativeApp.Database.Migrations
                             CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Spagete40",
-                            TotalCost = 14.0362582751719m
+                            Name = "Spagete40"
                         },
                         new
                         {
                             Id = 41,
-                            CategoryId = 2,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Makarone41",
-                            TotalCost = 16.3613898830309m
+                            Name = "Makarone41"
                         },
                         new
                         {
                             Id = 42,
-                            CategoryId = 5,
+                            CategoryId = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pizza42",
-                            TotalCost = 7.58055034865651m
+                            Name = "Pizza42"
                         },
                         new
                         {
                             Id = 43,
-                            CategoryId = 6,
+                            CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita43",
-                            TotalCost = 61.2379986914983m
+                            Name = "Pita43"
                         },
                         new
                         {
                             Id = 44,
-                            CategoryId = 3,
+                            CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Musaka44",
-                            TotalCost = 30.1307553086107m
+                            Name = "Musaka44"
                         },
                         new
                         {
                             Id = 45,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Ustipci45",
-                            TotalCost = 24.328000234127m
+                            Name = "Ustipci45"
                         },
                         new
                         {
                             Id = 46,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Palacinke46",
-                            TotalCost = 41.2028383050127m
+                            Name = "Palacinke46"
                         },
                         new
                         {
                             Id = 47,
-                            CategoryId = 4,
+                            CategoryId = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Spagete47",
-                            TotalCost = 2.6080111854747m
+                            Name = "Spagete47"
                         },
                         new
                         {
                             Id = 48,
-                            CategoryId = 6,
+                            CategoryId = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Makarone48",
-                            TotalCost = 31.8081724498459m
+                            Name = "Makarone48"
                         },
                         new
                         {
                             Id = 49,
-                            CategoryId = 4,
+                            CategoryId = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pizza49",
-                            TotalCost = 56.5364353603387m
+                            Name = "Pizza49"
                         },
                         new
                         {
                             Id = 50,
-                            CategoryId = 1,
+                            CategoryId = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Lorem Ipsum",
-                            Name = "Pita50",
-                            TotalCost = 83.481853784752m
+                            Name = "Pita50"
                         });
                 });
 
@@ -770,98 +717,98 @@ namespace NormativeApp.Database.Migrations
                         {
                             Id = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 36.9m,
-                            RecipeId = 42,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 88m,
+                            RecipeId = 5,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 2,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 32.68m,
-                            RecipeId = 34,
+                            IngredientId = 2,
+                            Quantity = 46m,
+                            RecipeId = 2,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 3,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 5.11m,
-                            RecipeId = 39,
-                            UnitMeasure = 1
+                            IngredientId = 5,
+                            Quantity = 35m,
+                            RecipeId = 5,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 4,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 7.87m,
-                            RecipeId = 22,
+                            IngredientId = 2,
+                            Quantity = 21m,
+                            RecipeId = 27,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 5,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 33.76m,
-                            RecipeId = 25,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 21m,
+                            RecipeId = 23,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 6,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 27.14m,
-                            RecipeId = 4,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 29m,
+                            RecipeId = 43,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 7,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 3,
-                            Quantity = 36.32m,
-                            RecipeId = 12,
-                            UnitMeasure = 1
+                            Quantity = 49m,
+                            RecipeId = 30,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 8,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 27.43m,
-                            RecipeId = 8,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 58m,
+                            RecipeId = 34,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 9,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 19.14m,
-                            RecipeId = 15,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 56m,
+                            RecipeId = 14,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 10,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 38.89m,
-                            RecipeId = 23,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 89m,
+                            RecipeId = 17,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 11,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 9,
-                            Quantity = 48.31m,
+                            Quantity = 96m,
                             RecipeId = 27,
                             UnitMeasure = 3
                         },
@@ -869,9 +816,9 @@ namespace NormativeApp.Database.Migrations
                         {
                             Id = 12,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 47.33m,
-                            RecipeId = 25,
+                            IngredientId = 5,
+                            Quantity = 59m,
+                            RecipeId = 28,
                             UnitMeasure = 0
                         },
                         new
@@ -879,35 +826,35 @@ namespace NormativeApp.Database.Migrations
                             Id = 13,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 25.15m,
-                            RecipeId = 17,
-                            UnitMeasure = 2
+                            Quantity = 67m,
+                            RecipeId = 35,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 14,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 38.96m,
-                            RecipeId = 26,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 86m,
+                            RecipeId = 24,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 15,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 35.59m,
-                            RecipeId = 27,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 45m,
+                            RecipeId = 34,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 16,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 26.13m,
-                            RecipeId = 22,
+                            IngredientId = 1,
+                            Quantity = 25m,
+                            RecipeId = 39,
                             UnitMeasure = 1
                         },
                         new
@@ -915,179 +862,179 @@ namespace NormativeApp.Database.Migrations
                             Id = 17,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 33.76m,
-                            RecipeId = 18,
-                            UnitMeasure = 3
+                            Quantity = 50m,
+                            RecipeId = 45,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 18,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 21.53m,
-                            RecipeId = 16,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 13m,
+                            RecipeId = 31,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 19,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 10.11m,
-                            RecipeId = 49,
+                            IngredientId = 5,
+                            Quantity = 31m,
+                            RecipeId = 12,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 20,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 12.47m,
-                            RecipeId = 30,
+                            IngredientId = 4,
+                            Quantity = 50m,
+                            RecipeId = 6,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 21,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 40m,
-                            RecipeId = 45,
+                            IngredientId = 2,
+                            Quantity = 64m,
+                            RecipeId = 38,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 22,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 18.22m,
-                            RecipeId = 16,
+                            IngredientId = 5,
+                            Quantity = 31m,
+                            RecipeId = 21,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 23,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 41.21m,
+                            IngredientId = 5,
+                            Quantity = 41m,
                             RecipeId = 27,
-                            UnitMeasure = 3
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 24,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 37.15m,
-                            RecipeId = 37,
+                            IngredientId = 2,
+                            Quantity = 82m,
+                            RecipeId = 12,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 25,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 12.3m,
-                            RecipeId = 12,
+                            IngredientId = 9,
+                            Quantity = 93m,
+                            RecipeId = 40,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 26,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 29.66m,
-                            RecipeId = 31,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 71m,
+                            RecipeId = 4,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 27,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 3.03m,
-                            RecipeId = 44,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 81m,
+                            RecipeId = 35,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 28,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 33.93m,
-                            RecipeId = 20,
-                            UnitMeasure = 2
+                            IngredientId = 9,
+                            Quantity = 92m,
+                            RecipeId = 38,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 29,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 10.17m,
-                            RecipeId = 4,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 94m,
+                            RecipeId = 20,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 30,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 49.15m,
-                            RecipeId = 17,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 66m,
+                            RecipeId = 25,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 31,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 4.11m,
-                            RecipeId = 28,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 65m,
+                            RecipeId = 17,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 32,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 25.11m,
-                            RecipeId = 38,
+                            IngredientId = 5,
+                            Quantity = 61m,
+                            RecipeId = 37,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 33,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 35.73m,
-                            RecipeId = 16,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 17m,
+                            RecipeId = 36,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 34,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 39.99m,
-                            RecipeId = 39,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 99m,
+                            RecipeId = 23,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 35,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 41.48m,
-                            RecipeId = 48,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 31m,
+                            RecipeId = 22,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 36,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 4.18m,
-                            RecipeId = 16,
+                            IngredientId = 3,
+                            Quantity = 54m,
+                            RecipeId = 36,
                             UnitMeasure = 2
                         },
                         new
@@ -1095,1402 +1042,1402 @@ namespace NormativeApp.Database.Migrations
                             Id = 37,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 22.47m,
-                            RecipeId = 26,
+                            Quantity = 18m,
+                            RecipeId = 29,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 38,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 46.17m,
-                            RecipeId = 4,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 94m,
+                            RecipeId = 12,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 39,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 28.71m,
-                            RecipeId = 35,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 69m,
+                            RecipeId = 15,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 40,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 23.7m,
-                            RecipeId = 21,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 89m,
+                            RecipeId = 39,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 41,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 1.59m,
-                            RecipeId = 36,
-                            UnitMeasure = 1
+                            IngredientId = 7,
+                            Quantity = 28m,
+                            RecipeId = 12,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 42,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 30.82m,
-                            RecipeId = 10,
-                            UnitMeasure = 2
+                            IngredientId = 7,
+                            Quantity = 85m,
+                            RecipeId = 44,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 43,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 16.55m,
-                            RecipeId = 42,
+                            Quantity = 29m,
+                            RecipeId = 16,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 44,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 12.8m,
-                            RecipeId = 16,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 70m,
+                            RecipeId = 49,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 45,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 31.55m,
-                            RecipeId = 7,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 60m,
+                            RecipeId = 35,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 46,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 6.13m,
-                            RecipeId = 34,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 83m,
+                            RecipeId = 23,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 47,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 18.85m,
-                            RecipeId = 5,
+                            Quantity = 90m,
+                            RecipeId = 43,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 48,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 42.26m,
-                            RecipeId = 11,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 62m,
+                            RecipeId = 39,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 49,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 6.62m,
-                            RecipeId = 4,
-                            UnitMeasure = 2
+                            Quantity = 41m,
+                            RecipeId = 6,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 50,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 1.02m,
-                            RecipeId = 3,
-                            UnitMeasure = 1
+                            IngredientId = 5,
+                            Quantity = 73m,
+                            RecipeId = 5,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 51,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 33.29m,
+                            IngredientId = 2,
+                            Quantity = 63m,
                             RecipeId = 11,
-                            UnitMeasure = 1
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 52,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 23.74m,
-                            RecipeId = 3,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 64m,
+                            RecipeId = 46,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 53,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 24.94m,
-                            RecipeId = 19,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 27m,
+                            RecipeId = 43,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 54,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 23.72m,
-                            RecipeId = 19,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 72m,
+                            RecipeId = 49,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 55,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 48.06m,
-                            RecipeId = 16,
+                            IngredientId = 6,
+                            Quantity = 18m,
+                            RecipeId = 46,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 56,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 1.95m,
-                            RecipeId = 4,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 24m,
+                            RecipeId = 41,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 57,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 5.1m,
-                            RecipeId = 35,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 46m,
+                            RecipeId = 49,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 58,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 4.66m,
-                            RecipeId = 6,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 95m,
+                            RecipeId = 34,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 59,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 6.72m,
-                            RecipeId = 26,
+                            IngredientId = 7,
+                            Quantity = 52m,
+                            RecipeId = 17,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 60,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 9.17m,
-                            RecipeId = 10,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 68m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 61,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 14.53m,
-                            RecipeId = 38,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 15m,
+                            RecipeId = 44,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 62,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 30.96m,
-                            RecipeId = 41,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 91m,
+                            RecipeId = 46,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 63,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 25.93m,
-                            RecipeId = 25,
-                            UnitMeasure = 3
+                            Quantity = 14m,
+                            RecipeId = 20,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 64,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 19.28m,
-                            RecipeId = 28,
+                            IngredientId = 3,
+                            Quantity = 11m,
+                            RecipeId = 22,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 65,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 40.95m,
-                            RecipeId = 29,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 71m,
+                            RecipeId = 48,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 66,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 13.7m,
-                            RecipeId = 39,
+                            IngredientId = 7,
+                            Quantity = 63m,
+                            RecipeId = 2,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 67,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 41.72m,
-                            RecipeId = 24,
-                            UnitMeasure = 1
+                            IngredientId = 1,
+                            Quantity = 47m,
+                            RecipeId = 34,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 68,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 28.4m,
-                            RecipeId = 11,
+                            IngredientId = 4,
+                            Quantity = 58m,
+                            RecipeId = 36,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 69,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 6.54m,
-                            RecipeId = 6,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 54m,
+                            RecipeId = 48,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 70,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 9.89m,
-                            RecipeId = 41,
-                            UnitMeasure = 3
+                            Quantity = 36m,
+                            RecipeId = 43,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 71,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 45.84m,
+                            IngredientId = 5,
+                            Quantity = 55m,
                             RecipeId = 21,
-                            UnitMeasure = 2
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 72,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 17.55m,
-                            RecipeId = 28,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 74m,
+                            RecipeId = 32,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 73,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 45.83m,
-                            RecipeId = 28,
+                            IngredientId = 2,
+                            Quantity = 40m,
+                            RecipeId = 34,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 74,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 39.89m,
-                            RecipeId = 7,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 47m,
+                            RecipeId = 24,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 75,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 48.44m,
+                            IngredientId = 9,
+                            Quantity = 53m,
                             RecipeId = 2,
-                            UnitMeasure = 1
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 76,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 14.69m,
-                            RecipeId = 19,
+                            IngredientId = 6,
+                            Quantity = 26m,
+                            RecipeId = 21,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 77,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 19.9m,
-                            RecipeId = 37,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 54m,
+                            RecipeId = 11,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 78,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 49.06m,
-                            RecipeId = 14,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 48m,
+                            RecipeId = 41,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 79,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 1.49m,
-                            RecipeId = 25,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 27m,
+                            RecipeId = 5,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 80,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 14.9m,
-                            RecipeId = 19,
+                            IngredientId = 7,
+                            Quantity = 56m,
+                            RecipeId = 11,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 81,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 14.26m,
-                            RecipeId = 49,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 62m,
+                            RecipeId = 16,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 82,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 23.62m,
-                            RecipeId = 10,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 36m,
+                            RecipeId = 2,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 83,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 32.41m,
-                            RecipeId = 24,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 26m,
+                            RecipeId = 13,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 84,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 4,
-                            Quantity = 1.13m,
-                            RecipeId = 23,
-                            UnitMeasure = 0
+                            Quantity = 75m,
+                            RecipeId = 26,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 85,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 36.42m,
-                            RecipeId = 32,
-                            UnitMeasure = 1
+                            IngredientId = 5,
+                            Quantity = 72m,
+                            RecipeId = 15,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 86,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 24.16m,
-                            RecipeId = 42,
+                            IngredientId = 9,
+                            Quantity = 27m,
+                            RecipeId = 49,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 87,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 18.55m,
-                            RecipeId = 6,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 61m,
+                            RecipeId = 37,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 88,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 8,
-                            Quantity = 6.14m,
-                            RecipeId = 25,
-                            UnitMeasure = 2
+                            Quantity = 97m,
+                            RecipeId = 42,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 89,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 19.79m,
-                            RecipeId = 1,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 62m,
+                            RecipeId = 19,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 90,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 30.31m,
-                            RecipeId = 4,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 97m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 91,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 8.54m,
-                            RecipeId = 1,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 57m,
+                            RecipeId = 49,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 92,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 43.14m,
-                            RecipeId = 7,
-                            UnitMeasure = 3
+                            Quantity = 50m,
+                            RecipeId = 31,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 93,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 15.79m,
-                            RecipeId = 49,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 30m,
+                            RecipeId = 40,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 94,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 5.25m,
-                            RecipeId = 34,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 29m,
+                            RecipeId = 49,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 95,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 43.61m,
-                            RecipeId = 32,
-                            UnitMeasure = 0
+                            IngredientId = 7,
+                            Quantity = 81m,
+                            RecipeId = 11,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 96,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 46.43m,
-                            RecipeId = 31,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 18m,
+                            RecipeId = 15,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 97,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 9.33m,
-                            RecipeId = 15,
-                            UnitMeasure = 3
+                            IngredientId = 8,
+                            Quantity = 64m,
+                            RecipeId = 17,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 98,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 41.06m,
+                            IngredientId = 7,
+                            Quantity = 75m,
                             RecipeId = 41,
-                            UnitMeasure = 1
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 99,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 48.23m,
-                            RecipeId = 48,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 43m,
+                            RecipeId = 26,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 100,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 29.62m,
-                            RecipeId = 12,
+                            Quantity = 33m,
+                            RecipeId = 21,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 101,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 18.63m,
-                            RecipeId = 1,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 20m,
+                            RecipeId = 45,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 102,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 27.19m,
-                            RecipeId = 38,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 42m,
+                            RecipeId = 33,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 103,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 22.1m,
-                            RecipeId = 32,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 83m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 104,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 48.97m,
-                            RecipeId = 19,
-                            UnitMeasure = 0
+                            IngredientId = 3,
+                            Quantity = 13m,
+                            RecipeId = 42,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 105,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 2.22m,
-                            RecipeId = 2,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 25m,
+                            RecipeId = 23,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 106,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 32.07m,
-                            RecipeId = 34,
+                            IngredientId = 2,
+                            Quantity = 88m,
+                            RecipeId = 43,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 107,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 16.11m,
-                            RecipeId = 45,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 28m,
+                            RecipeId = 34,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 108,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 27.14m,
-                            RecipeId = 41,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 94m,
+                            RecipeId = 39,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 109,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 32.2m,
-                            RecipeId = 20,
+                            IngredientId = 5,
+                            Quantity = 78m,
+                            RecipeId = 22,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 110,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 44.6m,
-                            RecipeId = 19,
+                            IngredientId = 6,
+                            Quantity = 74m,
+                            RecipeId = 13,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 111,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 31.27m,
-                            RecipeId = 31,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 26m,
+                            RecipeId = 23,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 112,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 4,
-                            Quantity = 7.92m,
-                            RecipeId = 39,
-                            UnitMeasure = 2
+                            Quantity = 83m,
+                            RecipeId = 44,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 113,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 24.07m,
-                            RecipeId = 25,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 98m,
+                            RecipeId = 15,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 114,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 17.08m,
-                            RecipeId = 37,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 48m,
+                            RecipeId = 26,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 115,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 41.92m,
-                            RecipeId = 6,
-                            UnitMeasure = 3
+                            Quantity = 77m,
+                            RecipeId = 1,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 116,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 41.84m,
-                            RecipeId = 46,
+                            IngredientId = 7,
+                            Quantity = 47m,
+                            RecipeId = 3,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 117,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 2.91m,
-                            RecipeId = 8,
+                            IngredientId = 3,
+                            Quantity = 91m,
+                            RecipeId = 14,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 118,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 3.82m,
-                            RecipeId = 9,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 43m,
+                            RecipeId = 27,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 119,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 30.64m,
-                            RecipeId = 20,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 40m,
+                            RecipeId = 22,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 120,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 28.26m,
-                            RecipeId = 31,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 28m,
+                            RecipeId = 2,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 121,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 40.81m,
-                            RecipeId = 6,
+                            IngredientId = 9,
+                            Quantity = 41m,
+                            RecipeId = 37,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 122,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 35.33m,
-                            RecipeId = 28,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 11m,
+                            RecipeId = 40,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 123,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 15.6m,
-                            RecipeId = 10,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 48m,
+                            RecipeId = 5,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 124,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 28.59m,
-                            RecipeId = 6,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 12m,
+                            RecipeId = 45,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 125,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 25.84m,
-                            RecipeId = 24,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 39m,
+                            RecipeId = 48,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 126,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 10.36m,
-                            RecipeId = 49,
-                            UnitMeasure = 0
+                            Quantity = 69m,
+                            RecipeId = 23,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 127,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 28.21m,
-                            RecipeId = 16,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 85m,
+                            RecipeId = 19,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 128,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 12.86m,
-                            RecipeId = 48,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 71m,
+                            RecipeId = 6,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 129,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 36.46m,
-                            RecipeId = 14,
+                            IngredientId = 4,
+                            Quantity = 40m,
+                            RecipeId = 40,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 130,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 1.29m,
-                            RecipeId = 39,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 52m,
+                            RecipeId = 18,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 131,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 49.5m,
-                            RecipeId = 44,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 32m,
+                            RecipeId = 14,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 132,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 47.42m,
-                            RecipeId = 45,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 89m,
+                            RecipeId = 9,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 133,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 17.01m,
-                            RecipeId = 5,
+                            IngredientId = 6,
+                            Quantity = 54m,
+                            RecipeId = 3,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 134,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 4.39m,
-                            RecipeId = 9,
+                            IngredientId = 6,
+                            Quantity = 85m,
+                            RecipeId = 47,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 135,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 35.66m,
-                            RecipeId = 26,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 69m,
+                            RecipeId = 17,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 136,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 3.81m,
-                            RecipeId = 44,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 88m,
+                            RecipeId = 41,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 137,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 45.93m,
-                            RecipeId = 8,
+                            IngredientId = 7,
+                            Quantity = 47m,
+                            RecipeId = 18,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 138,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 3.04m,
-                            RecipeId = 13,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 44m,
+                            RecipeId = 15,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 139,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 40.81m,
-                            RecipeId = 14,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 39m,
+                            RecipeId = 22,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 140,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 36.42m,
-                            RecipeId = 28,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 55m,
+                            RecipeId = 12,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 141,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 31.91m,
-                            RecipeId = 37,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 42m,
+                            RecipeId = 15,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 142,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 16.02m,
-                            RecipeId = 18,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 80m,
+                            RecipeId = 23,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 143,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 8.82m,
-                            RecipeId = 22,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 73m,
+                            RecipeId = 30,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 144,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 8,
-                            Quantity = 21.57m,
-                            RecipeId = 31,
-                            UnitMeasure = 3
+                            Quantity = 81m,
+                            RecipeId = 36,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 145,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 2.1m,
-                            RecipeId = 7,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 21m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 146,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 44.81m,
-                            RecipeId = 44,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 56m,
+                            RecipeId = 36,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 147,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 31.95m,
-                            RecipeId = 32,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 70m,
+                            RecipeId = 11,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 148,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 49.01m,
-                            RecipeId = 19,
+                            IngredientId = 3,
+                            Quantity = 13m,
+                            RecipeId = 14,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 149,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 3.77m,
-                            RecipeId = 45,
+                            IngredientId = 4,
+                            Quantity = 39m,
+                            RecipeId = 8,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 150,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 49.89m,
-                            RecipeId = 31,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 70m,
+                            RecipeId = 12,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 151,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 8.64m,
-                            RecipeId = 38,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 88m,
+                            RecipeId = 45,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 152,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 26.8m,
-                            RecipeId = 38,
-                            UnitMeasure = 1
+                            Quantity = 88m,
+                            RecipeId = 14,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 153,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 26.1m,
-                            RecipeId = 32,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 53m,
+                            RecipeId = 46,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 154,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 10.98m,
-                            RecipeId = 33,
-                            UnitMeasure = 2
+                            Quantity = 54m,
+                            RecipeId = 2,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 155,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 20.49m,
-                            RecipeId = 40,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 38m,
+                            RecipeId = 26,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 156,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 13.24m,
-                            RecipeId = 22,
+                            IngredientId = 5,
+                            Quantity = 95m,
+                            RecipeId = 44,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 157,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 1.6m,
-                            RecipeId = 21,
-                            UnitMeasure = 1
+                            IngredientId = 5,
+                            Quantity = 59m,
+                            RecipeId = 2,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 158,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 49.24m,
-                            RecipeId = 41,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 50m,
+                            RecipeId = 26,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 159,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 10.99m,
-                            RecipeId = 33,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 61m,
+                            RecipeId = 23,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 160,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 47.15m,
-                            RecipeId = 22,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 82m,
+                            RecipeId = 27,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 161,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 1.37m,
-                            RecipeId = 30,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 38m,
+                            RecipeId = 2,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 162,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 33.76m,
-                            RecipeId = 46,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 23m,
+                            RecipeId = 41,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 163,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 14.32m,
-                            RecipeId = 41,
-                            UnitMeasure = 2
+                            Quantity = 34m,
+                            RecipeId = 47,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 164,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 45.94m,
-                            RecipeId = 46,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 90m,
+                            RecipeId = 2,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 165,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 47.9m,
-                            RecipeId = 3,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 28m,
+                            RecipeId = 13,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 166,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 20.06m,
-                            RecipeId = 24,
-                            UnitMeasure = 0
+                            Quantity = 15m,
+                            RecipeId = 7,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 167,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 6.05m,
-                            RecipeId = 12,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 69m,
+                            RecipeId = 10,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 168,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 32.18m,
-                            RecipeId = 6,
+                            IngredientId = 9,
+                            Quantity = 40m,
+                            RecipeId = 23,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 169,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 11.95m,
-                            RecipeId = 20,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 57m,
+                            RecipeId = 24,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 170,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 43.39m,
-                            RecipeId = 11,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 52m,
+                            RecipeId = 12,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 171,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 1.35m,
-                            RecipeId = 49,
+                            IngredientId = 4,
+                            Quantity = 38m,
+                            RecipeId = 19,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 172,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 6.51m,
-                            RecipeId = 28,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 70m,
+                            RecipeId = 36,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 173,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 30.33m,
-                            RecipeId = 16,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 35m,
+                            RecipeId = 22,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 174,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 12.45m,
-                            RecipeId = 41,
+                            IngredientId = 1,
+                            Quantity = 45m,
+                            RecipeId = 4,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 175,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 36.71m,
-                            RecipeId = 10,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 48m,
+                            RecipeId = 2,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 176,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 49.64m,
-                            RecipeId = 6,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 71m,
+                            RecipeId = 14,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 177,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 1.55m,
-                            RecipeId = 22,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 51m,
+                            RecipeId = 6,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 178,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 38.92m,
-                            RecipeId = 47,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 20m,
+                            RecipeId = 30,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 179,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 7.24m,
-                            RecipeId = 39,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 42m,
+                            RecipeId = 6,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 180,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 44.9m,
-                            RecipeId = 18,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 27m,
+                            RecipeId = 14,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 181,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 21.91m,
-                            RecipeId = 43,
-                            UnitMeasure = 0
+                            IngredientId = 3,
+                            Quantity = 32m,
+                            RecipeId = 5,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 182,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 15.94m,
-                            RecipeId = 9,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 24m,
+                            RecipeId = 33,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 183,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 23.85m,
-                            RecipeId = 37,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 80m,
+                            RecipeId = 20,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 184,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 3.9m,
-                            RecipeId = 27,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 82m,
+                            RecipeId = 45,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 185,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 16.14m,
-                            RecipeId = 41,
+                            IngredientId = 3,
+                            Quantity = 95m,
+                            RecipeId = 37,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 186,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 24.8m,
-                            RecipeId = 29,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 76m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 187,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 5.2m,
-                            RecipeId = 37,
+                            IngredientId = 4,
+                            Quantity = 86m,
+                            RecipeId = 5,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 188,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 6.24m,
-                            RecipeId = 32,
-                            UnitMeasure = 0
+                            IngredientId = 7,
+                            Quantity = 22m,
+                            RecipeId = 35,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 189,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 41.89m,
-                            RecipeId = 20,
-                            UnitMeasure = 2
+                            Quantity = 94m,
+                            RecipeId = 10,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 190,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 14.75m,
-                            RecipeId = 22,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 38m,
+                            RecipeId = 11,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 191,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 49.78m,
-                            RecipeId = 18,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 85m,
+                            RecipeId = 43,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 192,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 14.21m,
+                            IngredientId = 3,
+                            Quantity = 11m,
                             RecipeId = 15,
                             UnitMeasure = 2
                         },
@@ -2498,477 +2445,477 @@ namespace NormativeApp.Database.Migrations
                         {
                             Id = 193,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 25.89m,
-                            RecipeId = 24,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 97m,
+                            RecipeId = 16,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 194,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 13.06m,
-                            RecipeId = 40,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 67m,
+                            RecipeId = 3,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 195,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 9,
-                            Quantity = 40.63m,
-                            RecipeId = 10,
-                            UnitMeasure = 2
+                            Quantity = 21m,
+                            RecipeId = 29,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 196,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 21.57m,
-                            RecipeId = 7,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 75m,
+                            RecipeId = 26,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 197,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 37.43m,
-                            RecipeId = 22,
-                            UnitMeasure = 2
+                            IngredientId = 7,
+                            Quantity = 67m,
+                            RecipeId = 47,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 198,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 16.59m,
-                            RecipeId = 22,
-                            UnitMeasure = 2
+                            IngredientId = 8,
+                            Quantity = 73m,
+                            RecipeId = 25,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 199,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 45.51m,
-                            RecipeId = 9,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 85m,
+                            RecipeId = 1,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 200,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 47.62m,
-                            RecipeId = 16,
+                            IngredientId = 3,
+                            Quantity = 13m,
+                            RecipeId = 30,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 201,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 11.9m,
-                            RecipeId = 11,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 67m,
+                            RecipeId = 17,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 202,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 18.06m,
-                            RecipeId = 23,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 98m,
+                            RecipeId = 35,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 203,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 35.95m,
-                            RecipeId = 27,
+                            IngredientId = 3,
+                            Quantity = 42m,
+                            RecipeId = 6,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 204,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 4.19m,
-                            RecipeId = 3,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 28m,
+                            RecipeId = 16,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 205,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 33.56m,
-                            RecipeId = 43,
+                            IngredientId = 2,
+                            Quantity = 58m,
+                            RecipeId = 16,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 206,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 15.84m,
-                            RecipeId = 7,
+                            IngredientId = 8,
+                            Quantity = 26m,
+                            RecipeId = 32,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 207,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 40.81m,
-                            RecipeId = 46,
-                            UnitMeasure = 1
+                            IngredientId = 7,
+                            Quantity = 95m,
+                            RecipeId = 37,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 208,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 41.26m,
-                            RecipeId = 28,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 15m,
+                            RecipeId = 33,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 209,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 13.11m,
-                            RecipeId = 46,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 97m,
+                            RecipeId = 43,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 210,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 47.23m,
-                            RecipeId = 6,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 12m,
+                            RecipeId = 28,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 211,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 38.79m,
-                            RecipeId = 49,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 14m,
+                            RecipeId = 39,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 212,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 32.22m,
-                            RecipeId = 14,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 98m,
+                            RecipeId = 24,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 213,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 2,
-                            Quantity = 26.66m,
-                            RecipeId = 23,
-                            UnitMeasure = 2
+                            Quantity = 72m,
+                            RecipeId = 1,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 214,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 45.9m,
-                            RecipeId = 37,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 27m,
+                            RecipeId = 35,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 215,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 40.94m,
-                            RecipeId = 42,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 56m,
+                            RecipeId = 49,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 216,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 28.6m,
-                            RecipeId = 15,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 15m,
+                            RecipeId = 12,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 217,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 4.1m,
-                            RecipeId = 39,
-                            UnitMeasure = 0
+                            Quantity = 49m,
+                            RecipeId = 11,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 218,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 2.92m,
-                            RecipeId = 39,
+                            IngredientId = 8,
+                            Quantity = 19m,
+                            RecipeId = 3,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 219,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 31.23m,
-                            RecipeId = 17,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 78m,
+                            RecipeId = 5,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 220,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 30.54m,
-                            RecipeId = 36,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 99m,
+                            RecipeId = 40,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 221,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 3.49m,
-                            RecipeId = 43,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 83m,
+                            RecipeId = 35,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 222,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 40.89m,
-                            RecipeId = 25,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 68m,
+                            RecipeId = 46,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 223,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 3.64m,
-                            RecipeId = 31,
-                            UnitMeasure = 1
+                            IngredientId = 5,
+                            Quantity = 43m,
+                            RecipeId = 6,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 224,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 21.26m,
-                            RecipeId = 21,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 57m,
+                            RecipeId = 47,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 225,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 49.14m,
-                            RecipeId = 34,
+                            IngredientId = 6,
+                            Quantity = 99m,
+                            RecipeId = 43,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 226,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 29.16m,
-                            RecipeId = 15,
+                            IngredientId = 9,
+                            Quantity = 95m,
+                            RecipeId = 48,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 227,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 2.37m,
-                            RecipeId = 12,
-                            UnitMeasure = 2
+                            IngredientId = 8,
+                            Quantity = 45m,
+                            RecipeId = 3,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 228,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 29.21m,
-                            RecipeId = 17,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 70m,
+                            RecipeId = 37,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 229,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 7.32m,
-                            RecipeId = 22,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 37m,
+                            RecipeId = 9,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 230,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 49.99m,
-                            RecipeId = 35,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 58m,
+                            RecipeId = 17,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 231,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 17.76m,
-                            RecipeId = 29,
+                            IngredientId = 1,
+                            Quantity = 89m,
+                            RecipeId = 18,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 232,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 45.09m,
-                            RecipeId = 32,
-                            UnitMeasure = 2
+                            IngredientId = 7,
+                            Quantity = 89m,
+                            RecipeId = 24,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 233,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 32.72m,
-                            RecipeId = 32,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 85m,
+                            RecipeId = 13,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 234,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 34.93m,
-                            RecipeId = 27,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 42m,
+                            RecipeId = 48,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 235,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 11.36m,
-                            RecipeId = 21,
-                            UnitMeasure = 0
+                            Quantity = 48m,
+                            RecipeId = 49,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 236,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 33.98m,
-                            RecipeId = 23,
+                            IngredientId = 7,
+                            Quantity = 66m,
+                            RecipeId = 10,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 237,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 29.79m,
+                            IngredientId = 4,
+                            Quantity = 29m,
                             RecipeId = 40,
-                            UnitMeasure = 2
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 238,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 13.83m,
-                            RecipeId = 31,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 34m,
+                            RecipeId = 35,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 239,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 24.62m,
-                            RecipeId = 43,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 19m,
+                            RecipeId = 3,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 240,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 21.96m,
-                            RecipeId = 34,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 70m,
+                            RecipeId = 5,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 241,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 3.09m,
-                            RecipeId = 4,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 70m,
+                            RecipeId = 49,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 242,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 4,
-                            Quantity = 48.42m,
-                            RecipeId = 1,
-                            UnitMeasure = 1
+                            Quantity = 12m,
+                            RecipeId = 32,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 243,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 46.39m,
-                            RecipeId = 28,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 35m,
+                            RecipeId = 41,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 244,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 43.14m,
-                            RecipeId = 37,
+                            IngredientId = 5,
+                            Quantity = 49m,
+                            RecipeId = 7,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 245,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 43.86m,
-                            RecipeId = 40,
+                            IngredientId = 3,
+                            Quantity = 76m,
+                            RecipeId = 23,
                             UnitMeasure = 1
                         },
                         new
@@ -2976,16 +2923,16 @@ namespace NormativeApp.Database.Migrations
                             Id = 246,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 29.09m,
-                            RecipeId = 17,
-                            UnitMeasure = 2
+                            Quantity = 43m,
+                            RecipeId = 25,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 247,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 35.37m,
+                            IngredientId = 5,
+                            Quantity = 26m,
                             RecipeId = 43,
                             UnitMeasure = 2
                         },
@@ -2993,63 +2940,63 @@ namespace NormativeApp.Database.Migrations
                         {
                             Id = 248,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 25.85m,
-                            RecipeId = 49,
+                            IngredientId = 5,
+                            Quantity = 67m,
+                            RecipeId = 21,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 249,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 42.74m,
-                            RecipeId = 10,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 18m,
+                            RecipeId = 49,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 250,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 5.83m,
-                            RecipeId = 4,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 98m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 251,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 14.22m,
-                            RecipeId = 26,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 95m,
+                            RecipeId = 17,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 252,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 10.06m,
-                            RecipeId = 36,
+                            IngredientId = 6,
+                            Quantity = 24m,
+                            RecipeId = 47,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 253,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 44.77m,
+                            IngredientId = 5,
+                            Quantity = 48m,
                             RecipeId = 46,
-                            UnitMeasure = 1
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 254,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 28.76m,
-                            RecipeId = 43,
+                            IngredientId = 6,
+                            Quantity = 87m,
+                            RecipeId = 33,
                             UnitMeasure = 3
                         },
                         new
@@ -3057,431 +3004,431 @@ namespace NormativeApp.Database.Migrations
                             Id = 255,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 1.57m,
-                            RecipeId = 45,
-                            UnitMeasure = 2
+                            Quantity = 74m,
+                            RecipeId = 47,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 256,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 7.35m,
-                            RecipeId = 3,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 31m,
+                            RecipeId = 13,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 257,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 38.57m,
-                            RecipeId = 9,
+                            IngredientId = 7,
+                            Quantity = 72m,
+                            RecipeId = 46,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 258,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 24.57m,
-                            RecipeId = 8,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 61m,
+                            RecipeId = 18,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 259,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 22.24m,
-                            RecipeId = 3,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 80m,
+                            RecipeId = 13,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 260,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 4.52m,
-                            RecipeId = 19,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 14m,
+                            RecipeId = 8,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 261,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 17.02m,
-                            RecipeId = 48,
-                            UnitMeasure = 2
+                            Quantity = 72m,
+                            RecipeId = 19,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 262,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 35.67m,
-                            RecipeId = 42,
-                            UnitMeasure = 3
+                            IngredientId = 8,
+                            Quantity = 94m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 263,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 42.11m,
-                            RecipeId = 10,
+                            IngredientId = 3,
+                            Quantity = 93m,
+                            RecipeId = 11,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 264,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 16.64m,
-                            RecipeId = 47,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 20m,
+                            RecipeId = 16,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 265,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 49.85m,
-                            RecipeId = 23,
-                            UnitMeasure = 3
+                            Quantity = 27m,
+                            RecipeId = 17,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 266,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 38.93m,
-                            RecipeId = 12,
-                            UnitMeasure = 1
+                            IngredientId = 1,
+                            Quantity = 30m,
+                            RecipeId = 45,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 267,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 30.7m,
-                            RecipeId = 9,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 62m,
+                            RecipeId = 45,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 268,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 36.95m,
-                            RecipeId = 29,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 74m,
+                            RecipeId = 38,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 269,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 40.82m,
-                            RecipeId = 22,
+                            IngredientId = 4,
+                            Quantity = 75m,
+                            RecipeId = 31,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 270,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 16.82m,
-                            RecipeId = 12,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 36m,
+                            RecipeId = 36,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 271,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 22.46m,
-                            RecipeId = 15,
+                            IngredientId = 3,
+                            Quantity = 85m,
+                            RecipeId = 37,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 272,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 24.26m,
-                            RecipeId = 17,
+                            IngredientId = 2,
+                            Quantity = 20m,
+                            RecipeId = 32,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 273,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 38.5m,
-                            RecipeId = 30,
+                            IngredientId = 8,
+                            Quantity = 63m,
+                            RecipeId = 13,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 274,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 7.13m,
-                            RecipeId = 37,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 43m,
+                            RecipeId = 3,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 275,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 4,
-                            Quantity = 19.34m,
-                            RecipeId = 15,
-                            UnitMeasure = 2
+                            Quantity = 12m,
+                            RecipeId = 19,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 276,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 8.14m,
-                            RecipeId = 38,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 69m,
+                            RecipeId = 11,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 277,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 47.24m,
-                            RecipeId = 21,
+                            IngredientId = 3,
+                            Quantity = 78m,
+                            RecipeId = 26,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 278,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 7.51m,
-                            RecipeId = 31,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 27m,
+                            RecipeId = 8,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 279,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 24.56m,
-                            RecipeId = 48,
+                            IngredientId = 1,
+                            Quantity = 57m,
+                            RecipeId = 16,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 280,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 16.25m,
-                            RecipeId = 25,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 73m,
+                            RecipeId = 13,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 281,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 10.97m,
-                            RecipeId = 1,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 13m,
+                            RecipeId = 44,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 282,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 2,
-                            Quantity = 5.84m,
-                            RecipeId = 48,
-                            UnitMeasure = 0
+                            Quantity = 68m,
+                            RecipeId = 17,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 283,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 17.73m,
-                            RecipeId = 25,
-                            UnitMeasure = 3
+                            Quantity = 35m,
+                            RecipeId = 4,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 284,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 27.62m,
-                            RecipeId = 35,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 91m,
+                            RecipeId = 13,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 285,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 31.48m,
-                            RecipeId = 36,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 65m,
+                            RecipeId = 30,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 286,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 40.66m,
-                            RecipeId = 5,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 30m,
+                            RecipeId = 21,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 287,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 45.17m,
-                            RecipeId = 41,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 32m,
+                            RecipeId = 33,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 288,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 49.84m,
-                            RecipeId = 37,
-                            UnitMeasure = 3
+                            Quantity = 12m,
+                            RecipeId = 12,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 289,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 15.08m,
-                            RecipeId = 21,
+                            IngredientId = 3,
+                            Quantity = 25m,
+                            RecipeId = 32,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 290,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 37.6m,
-                            RecipeId = 25,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 96m,
+                            RecipeId = 30,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 291,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 34.29m,
-                            RecipeId = 26,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 81m,
+                            RecipeId = 29,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 292,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 36.1m,
-                            RecipeId = 46,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 79m,
+                            RecipeId = 9,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 293,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 4,
-                            Quantity = 21.71m,
-                            RecipeId = 5,
+                            Quantity = 13m,
+                            RecipeId = 8,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 294,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 9.2m,
-                            RecipeId = 49,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 38m,
+                            RecipeId = 24,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 295,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 35.71m,
+                            IngredientId = 3,
+                            Quantity = 31m,
                             RecipeId = 48,
-                            UnitMeasure = 2
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 296,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 27.33m,
-                            RecipeId = 40,
+                            IngredientId = 6,
+                            Quantity = 65m,
+                            RecipeId = 45,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 297,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 11.67m,
-                            RecipeId = 13,
-                            UnitMeasure = 2
+                            IngredientId = 9,
+                            Quantity = 77m,
+                            RecipeId = 21,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 298,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 8,
-                            Quantity = 31.93m,
-                            RecipeId = 22,
-                            UnitMeasure = 2
+                            Quantity = 53m,
+                            RecipeId = 4,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 299,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 44.53m,
-                            RecipeId = 34,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 85m,
+                            RecipeId = 29,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 300,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 29.48m,
-                            RecipeId = 2,
-                            UnitMeasure = 1
+                            Quantity = 64m,
+                            RecipeId = 22,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 301,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 27.38m,
-                            RecipeId = 48,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 85m,
+                            RecipeId = 39,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 302,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 48.76m,
-                            RecipeId = 25,
+                            IngredientId = 3,
+                            Quantity = 83m,
+                            RecipeId = 34,
                             UnitMeasure = 0
                         },
                         new
@@ -3489,35 +3436,35 @@ namespace NormativeApp.Database.Migrations
                             Id = 303,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 19.72m,
-                            RecipeId = 8,
-                            UnitMeasure = 1
+                            Quantity = 15m,
+                            RecipeId = 48,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 304,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 2,
-                            Quantity = 38.09m,
-                            RecipeId = 48,
-                            UnitMeasure = 1
+                            Quantity = 51m,
+                            RecipeId = 25,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 305,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 12.61m,
-                            RecipeId = 8,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 35m,
+                            RecipeId = 15,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 306,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 9.89m,
-                            RecipeId = 48,
+                            IngredientId = 8,
+                            Quantity = 10m,
+                            RecipeId = 4,
                             UnitMeasure = 0
                         },
                         new
@@ -3525,278 +3472,278 @@ namespace NormativeApp.Database.Migrations
                             Id = 307,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 2,
-                            Quantity = 4.18m,
-                            RecipeId = 15,
-                            UnitMeasure = 0
+                            Quantity = 22m,
+                            RecipeId = 47,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 308,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 41.66m,
-                            RecipeId = 28,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 28m,
+                            RecipeId = 23,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 309,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 43.5m,
-                            RecipeId = 37,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 98m,
+                            RecipeId = 32,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 310,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 9.48m,
-                            RecipeId = 9,
-                            UnitMeasure = 3
+                            IngredientId = 8,
+                            Quantity = 68m,
+                            RecipeId = 40,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 311,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 25.31m,
-                            RecipeId = 43,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 98m,
+                            RecipeId = 9,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 312,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 46.84m,
-                            RecipeId = 3,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 41m,
+                            RecipeId = 41,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 313,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 4.27m,
-                            RecipeId = 19,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 28m,
+                            RecipeId = 40,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 314,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 10.31m,
-                            RecipeId = 48,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 81m,
+                            RecipeId = 13,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 315,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 6.98m,
-                            RecipeId = 20,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 85m,
+                            RecipeId = 9,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 316,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 36.18m,
-                            RecipeId = 15,
-                            UnitMeasure = 0
+                            IngredientId = 6,
+                            Quantity = 89m,
+                            RecipeId = 9,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 317,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 34.05m,
-                            RecipeId = 19,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 74m,
+                            RecipeId = 16,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 318,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 7,
-                            Quantity = 37.19m,
-                            RecipeId = 28,
+                            Quantity = 20m,
+                            RecipeId = 11,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 319,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 49.62m,
-                            RecipeId = 6,
+                            IngredientId = 2,
+                            Quantity = 10m,
+                            RecipeId = 40,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 320,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 30.36m,
-                            RecipeId = 11,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 50m,
+                            RecipeId = 41,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 321,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 42m,
-                            RecipeId = 35,
-                            UnitMeasure = 0
+                            IngredientId = 7,
+                            Quantity = 47m,
+                            RecipeId = 41,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 322,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 26.87m,
-                            RecipeId = 25,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 26m,
+                            RecipeId = 30,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 323,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 38.46m,
-                            RecipeId = 49,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 58m,
+                            RecipeId = 29,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 324,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 2.63m,
-                            RecipeId = 21,
+                            IngredientId = 2,
+                            Quantity = 95m,
+                            RecipeId = 48,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 325,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 1.94m,
-                            RecipeId = 15,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 30m,
+                            RecipeId = 26,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 326,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 24.25m,
-                            RecipeId = 38,
+                            IngredientId = 2,
+                            Quantity = 24m,
+                            RecipeId = 21,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 327,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 19.73m,
-                            RecipeId = 25,
-                            UnitMeasure = 2
+                            IngredientId = 7,
+                            Quantity = 26m,
+                            RecipeId = 40,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 328,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 34.61m,
-                            RecipeId = 48,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 23m,
+                            RecipeId = 21,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 329,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 44.5m,
-                            RecipeId = 45,
+                            IngredientId = 1,
+                            Quantity = 70m,
+                            RecipeId = 7,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 330,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 26.96m,
-                            RecipeId = 20,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 59m,
+                            RecipeId = 10,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 331,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 48.77m,
-                            RecipeId = 18,
+                            IngredientId = 5,
+                            Quantity = 59m,
+                            RecipeId = 22,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 332,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 45.63m,
-                            RecipeId = 1,
+                            IngredientId = 8,
+                            Quantity = 54m,
+                            RecipeId = 11,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 333,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 13.65m,
-                            RecipeId = 7,
+                            IngredientId = 4,
+                            Quantity = 22m,
+                            RecipeId = 11,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 334,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 2.79m,
-                            RecipeId = 27,
+                            IngredientId = 3,
+                            Quantity = 46m,
+                            RecipeId = 12,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 335,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 21.51m,
-                            RecipeId = 16,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 76m,
+                            RecipeId = 30,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 336,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 26.57m,
-                            RecipeId = 7,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 82m,
+                            RecipeId = 2,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 337,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 8,
-                            Quantity = 26.94m,
-                            RecipeId = 44,
+                            Quantity = 19m,
+                            RecipeId = 42,
                             UnitMeasure = 3
                         },
                         new
@@ -3804,17 +3751,17 @@ namespace NormativeApp.Database.Migrations
                             Id = 338,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 30.57m,
-                            RecipeId = 37,
-                            UnitMeasure = 2
+                            Quantity = 44m,
+                            RecipeId = 24,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 339,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 2,
-                            Quantity = 3.93m,
-                            RecipeId = 28,
+                            Quantity = 77m,
+                            RecipeId = 14,
                             UnitMeasure = 3
                         },
                         new
@@ -3822,89 +3769,89 @@ namespace NormativeApp.Database.Migrations
                             Id = 340,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 9,
-                            Quantity = 12.31m,
-                            RecipeId = 37,
+                            Quantity = 86m,
+                            RecipeId = 33,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 341,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 36.25m,
-                            RecipeId = 2,
+                            IngredientId = 5,
+                            Quantity = 88m,
+                            RecipeId = 12,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 342,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 23.1m,
-                            RecipeId = 9,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 54m,
+                            RecipeId = 1,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 343,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 17.65m,
-                            RecipeId = 9,
+                            IngredientId = 1,
+                            Quantity = 82m,
+                            RecipeId = 30,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 344,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 16.77m,
-                            RecipeId = 15,
+                            IngredientId = 7,
+                            Quantity = 16m,
+                            RecipeId = 30,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 345,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 23.13m,
-                            RecipeId = 4,
-                            UnitMeasure = 1
+                            IngredientId = 1,
+                            Quantity = 42m,
+                            RecipeId = 34,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 346,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 25.51m,
-                            RecipeId = 7,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 25m,
+                            RecipeId = 38,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 347,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 10.75m,
-                            RecipeId = 11,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 75m,
+                            RecipeId = 3,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 348,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 14.94m,
-                            RecipeId = 3,
+                            IngredientId = 5,
+                            Quantity = 95m,
+                            RecipeId = 26,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 349,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 25.53m,
-                            RecipeId = 21,
+                            IngredientId = 8,
+                            Quantity = 67m,
+                            RecipeId = 26,
                             UnitMeasure = 0
                         },
                         new
@@ -3912,88 +3859,88 @@ namespace NormativeApp.Database.Migrations
                             Id = 350,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 8,
-                            Quantity = 20.14m,
-                            RecipeId = 34,
+                            Quantity = 48m,
+                            RecipeId = 12,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 351,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 23.87m,
-                            RecipeId = 6,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 40m,
+                            RecipeId = 16,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 352,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 30.11m,
-                            RecipeId = 15,
-                            UnitMeasure = 3
+                            IngredientId = 5,
+                            Quantity = 61m,
+                            RecipeId = 36,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 353,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 47.19m,
+                            IngredientId = 4,
+                            Quantity = 30m,
                             RecipeId = 3,
-                            UnitMeasure = 3
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 354,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 30.71m,
-                            RecipeId = 30,
+                            IngredientId = 5,
+                            Quantity = 23m,
+                            RecipeId = 29,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 355,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 19.08m,
-                            RecipeId = 9,
+                            IngredientId = 2,
+                            Quantity = 95m,
+                            RecipeId = 18,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 356,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 46.65m,
-                            RecipeId = 3,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 42m,
+                            RecipeId = 21,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 357,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 18.81m,
-                            RecipeId = 14,
+                            IngredientId = 2,
+                            Quantity = 39m,
+                            RecipeId = 5,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 358,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 18m,
-                            RecipeId = 32,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 20m,
+                            RecipeId = 2,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 359,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 8.08m,
+                            IngredientId = 6,
+                            Quantity = 17m,
                             RecipeId = 34,
                             UnitMeasure = 2
                         },
@@ -4001,135 +3948,135 @@ namespace NormativeApp.Database.Migrations
                         {
                             Id = 360,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 16.71m,
-                            RecipeId = 29,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 94m,
+                            RecipeId = 10,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 361,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 34.41m,
-                            RecipeId = 49,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 13m,
+                            RecipeId = 20,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 362,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 19.86m,
-                            RecipeId = 37,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 16m,
+                            RecipeId = 13,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 363,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 47.64m,
-                            RecipeId = 2,
-                            UnitMeasure = 2
+                            IngredientId = 9,
+                            Quantity = 22m,
+                            RecipeId = 33,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 364,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 7.38m,
-                            RecipeId = 16,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 36m,
+                            RecipeId = 43,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 365,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 30.06m,
-                            RecipeId = 23,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 38m,
+                            RecipeId = 44,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 366,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 15.44m,
-                            RecipeId = 33,
+                            IngredientId = 8,
+                            Quantity = 61m,
+                            RecipeId = 11,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 367,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 11.76m,
-                            RecipeId = 49,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 88m,
+                            RecipeId = 15,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 368,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 47.28m,
-                            RecipeId = 2,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 54m,
+                            RecipeId = 18,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 369,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 24.3m,
-                            RecipeId = 22,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 69m,
+                            RecipeId = 13,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 370,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 26.49m,
-                            RecipeId = 12,
-                            UnitMeasure = 0
+                            IngredientId = 3,
+                            Quantity = 88m,
+                            RecipeId = 18,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 371,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 46.53m,
-                            RecipeId = 5,
-                            UnitMeasure = 0
+                            IngredientId = 3,
+                            Quantity = 20m,
+                            RecipeId = 4,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 372,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 31.35m,
-                            RecipeId = 31,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 11m,
+                            RecipeId = 21,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 373,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 47.42m,
-                            RecipeId = 26,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 68m,
+                            RecipeId = 18,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 374,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 10.16m,
-                            RecipeId = 5,
+                            IngredientId = 4,
+                            Quantity = 34m,
+                            RecipeId = 22,
                             UnitMeasure = 2
                         },
                         new
@@ -4137,26 +4084,26 @@ namespace NormativeApp.Database.Migrations
                             Id = 375,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 42.32m,
-                            RecipeId = 14,
+                            Quantity = 83m,
+                            RecipeId = 28,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 376,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 15.44m,
-                            RecipeId = 36,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 73m,
+                            RecipeId = 26,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 377,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 40.12m,
-                            RecipeId = 5,
+                            IngredientId = 5,
+                            Quantity = 78m,
+                            RecipeId = 23,
                             UnitMeasure = 0
                         },
                         new
@@ -4164,737 +4111,737 @@ namespace NormativeApp.Database.Migrations
                             Id = 378,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 1,
-                            Quantity = 35.34m,
-                            RecipeId = 3,
-                            UnitMeasure = 3
+                            Quantity = 60m,
+                            RecipeId = 36,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 379,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 30.41m,
-                            RecipeId = 19,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 55m,
+                            RecipeId = 18,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 380,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 3.59m,
-                            RecipeId = 27,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 15m,
+                            RecipeId = 33,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 381,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 18.93m,
-                            RecipeId = 2,
+                            IngredientId = 6,
+                            Quantity = 63m,
+                            RecipeId = 17,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 382,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 31.77m,
-                            RecipeId = 28,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 25m,
+                            RecipeId = 47,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 383,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 10.54m,
-                            RecipeId = 37,
+                            IngredientId = 1,
+                            Quantity = 75m,
+                            RecipeId = 9,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 384,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 41.07m,
-                            RecipeId = 40,
-                            UnitMeasure = 2
+                            IngredientId = 9,
+                            Quantity = 26m,
+                            RecipeId = 22,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 385,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 42.31m,
-                            RecipeId = 4,
-                            UnitMeasure = 1
+                            IngredientId = 1,
+                            Quantity = 65m,
+                            RecipeId = 28,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 386,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 22.77m,
-                            RecipeId = 43,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 60m,
+                            RecipeId = 16,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 387,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 35.92m,
-                            RecipeId = 46,
+                            IngredientId = 1,
+                            Quantity = 67m,
+                            RecipeId = 30,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 388,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 44.09m,
-                            RecipeId = 36,
-                            UnitMeasure = 3
+                            IngredientId = 3,
+                            Quantity = 95m,
+                            RecipeId = 42,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 389,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 46.63m,
-                            RecipeId = 48,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 61m,
+                            RecipeId = 25,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 390,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 4.63m,
-                            RecipeId = 2,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 19m,
+                            RecipeId = 27,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 391,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 49.93m,
-                            RecipeId = 23,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 31m,
+                            RecipeId = 18,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 392,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 2.76m,
-                            RecipeId = 26,
-                            UnitMeasure = 1
+                            IngredientId = 7,
+                            Quantity = 27m,
+                            RecipeId = 14,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 393,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 42.55m,
-                            RecipeId = 32,
-                            UnitMeasure = 3
+                            Quantity = 47m,
+                            RecipeId = 22,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 394,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 14.76m,
-                            RecipeId = 45,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 90m,
+                            RecipeId = 43,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 395,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 36.3m,
-                            RecipeId = 23,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 62m,
+                            RecipeId = 2,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 396,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 11.2m,
-                            RecipeId = 34,
-                            UnitMeasure = 1
+                            IngredientId = 4,
+                            Quantity = 15m,
+                            RecipeId = 43,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 397,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 40.04m,
-                            RecipeId = 32,
+                            IngredientId = 6,
+                            Quantity = 37m,
+                            RecipeId = 5,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 398,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 38.48m,
-                            RecipeId = 47,
-                            UnitMeasure = 0
+                            IngredientId = 3,
+                            Quantity = 45m,
+                            RecipeId = 19,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 399,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 6.93m,
-                            RecipeId = 10,
-                            UnitMeasure = 1
+                            IngredientId = 7,
+                            Quantity = 58m,
+                            RecipeId = 47,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 400,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 19.85m,
-                            RecipeId = 16,
-                            UnitMeasure = 1
+                            IngredientId = 8,
+                            Quantity = 14m,
+                            RecipeId = 18,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 401,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 16.57m,
-                            RecipeId = 19,
+                            IngredientId = 3,
+                            Quantity = 43m,
+                            RecipeId = 41,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 402,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 34.24m,
-                            RecipeId = 13,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 27m,
+                            RecipeId = 44,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 403,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 42.62m,
-                            RecipeId = 46,
-                            UnitMeasure = 2
+                            IngredientId = 8,
+                            Quantity = 92m,
+                            RecipeId = 35,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 404,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 39.78m,
-                            RecipeId = 38,
+                            IngredientId = 2,
+                            Quantity = 16m,
+                            RecipeId = 46,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 405,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 39.49m,
-                            RecipeId = 3,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 62m,
+                            RecipeId = 40,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 406,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 40.16m,
-                            RecipeId = 7,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 10m,
+                            RecipeId = 23,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 407,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 19.99m,
-                            RecipeId = 6,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 67m,
+                            RecipeId = 8,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 408,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 13.77m,
-                            RecipeId = 34,
-                            UnitMeasure = 2
+                            IngredientId = 4,
+                            Quantity = 44m,
+                            RecipeId = 31,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 409,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 27.72m,
-                            RecipeId = 36,
-                            UnitMeasure = 0
+                            IngredientId = 7,
+                            Quantity = 19m,
+                            RecipeId = 11,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 410,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 25.41m,
-                            RecipeId = 45,
-                            UnitMeasure = 0
+                            IngredientId = 7,
+                            Quantity = 97m,
+                            RecipeId = 49,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 411,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 30.03m,
-                            RecipeId = 25,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 21m,
+                            RecipeId = 24,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 412,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 2,
-                            Quantity = 41.7m,
-                            RecipeId = 25,
-                            UnitMeasure = 1
+                            Quantity = 19m,
+                            RecipeId = 17,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 413,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 26.86m,
-                            RecipeId = 9,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 69m,
+                            RecipeId = 30,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 414,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 42.86m,
-                            RecipeId = 35,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 43m,
+                            RecipeId = 15,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 415,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 2.26m,
-                            RecipeId = 10,
-                            UnitMeasure = 1
+                            IngredientId = 2,
+                            Quantity = 21m,
+                            RecipeId = 12,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 416,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 4.14m,
-                            RecipeId = 44,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 72m,
+                            RecipeId = 35,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 417,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 20.78m,
-                            RecipeId = 32,
-                            UnitMeasure = 3
+                            IngredientId = 8,
+                            Quantity = 17m,
+                            RecipeId = 23,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 418,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 17.83m,
-                            RecipeId = 18,
+                            IngredientId = 5,
+                            Quantity = 99m,
+                            RecipeId = 3,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 419,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 27.62m,
-                            RecipeId = 26,
+                            IngredientId = 8,
+                            Quantity = 23m,
+                            RecipeId = 20,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 420,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 34.08m,
-                            RecipeId = 14,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 88m,
+                            RecipeId = 12,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 421,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 32.56m,
-                            RecipeId = 48,
+                            IngredientId = 8,
+                            Quantity = 64m,
+                            RecipeId = 14,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 422,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 17.93m,
-                            RecipeId = 45,
-                            UnitMeasure = 0
+                            IngredientId = 4,
+                            Quantity = 84m,
+                            RecipeId = 38,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 423,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 34.74m,
-                            RecipeId = 9,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 44m,
+                            RecipeId = 19,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 424,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 37.99m,
-                            RecipeId = 29,
+                            IngredientId = 5,
+                            Quantity = 14m,
+                            RecipeId = 32,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 425,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 2.61m,
-                            RecipeId = 5,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 18m,
+                            RecipeId = 15,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 426,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 21.9m,
-                            RecipeId = 23,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 76m,
+                            RecipeId = 2,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 427,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 6,
-                            Quantity = 49.51m,
-                            RecipeId = 12,
-                            UnitMeasure = 3
+                            Quantity = 64m,
+                            RecipeId = 27,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 428,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 9,
-                            Quantity = 41.6m,
-                            RecipeId = 1,
+                            Quantity = 30m,
+                            RecipeId = 14,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 429,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 20.56m,
-                            RecipeId = 31,
-                            UnitMeasure = 1
+                            IngredientId = 1,
+                            Quantity = 32m,
+                            RecipeId = 15,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 430,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 40.12m,
-                            RecipeId = 21,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 54m,
+                            RecipeId = 20,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 431,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 34.79m,
-                            RecipeId = 12,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 82m,
+                            RecipeId = 47,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 432,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 1.23m,
-                            RecipeId = 20,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 44m,
+                            RecipeId = 3,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 433,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 22.11m,
-                            RecipeId = 43,
-                            UnitMeasure = 1
+                            IngredientId = 7,
+                            Quantity = 26m,
+                            RecipeId = 38,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 434,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 9.75m,
-                            RecipeId = 25,
+                            IngredientId = 3,
+                            Quantity = 11m,
+                            RecipeId = 18,
                             UnitMeasure = 0
                         },
                         new
                         {
                             Id = 435,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 7.02m,
-                            RecipeId = 32,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 58m,
+                            RecipeId = 6,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 436,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 23.54m,
-                            RecipeId = 40,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 54m,
+                            RecipeId = 39,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 437,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 15.14m,
-                            RecipeId = 20,
+                            IngredientId = 6,
+                            Quantity = 56m,
+                            RecipeId = 21,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 438,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 11.96m,
-                            RecipeId = 16,
+                            IngredientId = 2,
+                            Quantity = 18m,
+                            RecipeId = 10,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 439,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 30.88m,
-                            RecipeId = 20,
-                            UnitMeasure = 1
+                            IngredientId = 1,
+                            Quantity = 64m,
+                            RecipeId = 18,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 440,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 15.52m,
-                            RecipeId = 15,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 18m,
+                            RecipeId = 7,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 441,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 4.63m,
-                            RecipeId = 17,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 73m,
+                            RecipeId = 12,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 442,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 33.13m,
-                            RecipeId = 2,
-                            UnitMeasure = 2
+                            IngredientId = 8,
+                            Quantity = 48m,
+                            RecipeId = 36,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 443,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 24.32m,
-                            RecipeId = 11,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 75m,
+                            RecipeId = 4,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 444,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 15.53m,
-                            RecipeId = 32,
+                            IngredientId = 4,
+                            Quantity = 34m,
+                            RecipeId = 4,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 445,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 11.15m,
-                            RecipeId = 27,
-                            UnitMeasure = 1
+                            IngredientId = 3,
+                            Quantity = 98m,
+                            RecipeId = 40,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 446,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 13.92m,
-                            RecipeId = 36,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 75m,
+                            RecipeId = 33,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 447,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 47.96m,
-                            RecipeId = 48,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 12m,
+                            RecipeId = 29,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 448,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 33.03m,
-                            RecipeId = 25,
-                            UnitMeasure = 2
+                            IngredientId = 3,
+                            Quantity = 28m,
+                            RecipeId = 35,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 449,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 4.23m,
-                            RecipeId = 27,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 90m,
+                            RecipeId = 18,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 450,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 15.55m,
-                            RecipeId = 13,
-                            UnitMeasure = 0
+                            IngredientId = 8,
+                            Quantity = 78m,
+                            RecipeId = 32,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 451,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 38.8m,
-                            RecipeId = 13,
-                            UnitMeasure = 1
+                            Quantity = 55m,
+                            RecipeId = 9,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 452,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 45.55m,
-                            RecipeId = 22,
-                            UnitMeasure = 0
+                            IngredientId = 2,
+                            Quantity = 66m,
+                            RecipeId = 24,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 453,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 38.76m,
-                            RecipeId = 22,
+                            IngredientId = 1,
+                            Quantity = 94m,
+                            RecipeId = 38,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 454,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 26.73m,
-                            RecipeId = 16,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 74m,
+                            RecipeId = 17,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 455,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 13.97m,
-                            RecipeId = 24,
+                            IngredientId = 2,
+                            Quantity = 12m,
+                            RecipeId = 46,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 456,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 49.76m,
-                            RecipeId = 12,
+                            IngredientId = 1,
+                            Quantity = 34m,
+                            RecipeId = 40,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 457,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 35.46m,
-                            RecipeId = 14,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 61m,
+                            RecipeId = 35,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 458,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 2,
-                            Quantity = 8.93m,
-                            RecipeId = 21,
-                            UnitMeasure = 1
+                            Quantity = 95m,
+                            RecipeId = 23,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 459,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 6.64m,
-                            RecipeId = 41,
+                            IngredientId = 4,
+                            Quantity = 35m,
+                            RecipeId = 28,
                             UnitMeasure = 1
                         },
                         new
@@ -4902,277 +4849,277 @@ namespace NormativeApp.Database.Migrations
                             Id = 460,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 16.47m,
-                            RecipeId = 2,
-                            UnitMeasure = 1
+                            Quantity = 18m,
+                            RecipeId = 16,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 461,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 28.73m,
-                            RecipeId = 3,
-                            UnitMeasure = 3
+                            IngredientId = 1,
+                            Quantity = 61m,
+                            RecipeId = 43,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 462,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 40.63m,
-                            RecipeId = 44,
-                            UnitMeasure = 3
+                            IngredientId = 4,
+                            Quantity = 50m,
+                            RecipeId = 18,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 463,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 8.72m,
-                            RecipeId = 32,
-                            UnitMeasure = 1
+                            IngredientId = 5,
+                            Quantity = 27m,
+                            RecipeId = 23,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 464,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 15.64m,
-                            RecipeId = 7,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 79m,
+                            RecipeId = 42,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 465,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 30.6m,
-                            RecipeId = 10,
-                            UnitMeasure = 1
+                            IngredientId = 7,
+                            Quantity = 62m,
+                            RecipeId = 13,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 466,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 31.85m,
-                            RecipeId = 12,
-                            UnitMeasure = 1
+                            IngredientId = 7,
+                            Quantity = 57m,
+                            RecipeId = 29,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 467,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 26.68m,
-                            RecipeId = 34,
+                            IngredientId = 1,
+                            Quantity = 31m,
+                            RecipeId = 4,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 468,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 7,
-                            Quantity = 48.49m,
+                            IngredientId = 6,
+                            Quantity = 18m,
                             RecipeId = 18,
-                            UnitMeasure = 1
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 469,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 26.12m,
-                            RecipeId = 7,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 43m,
+                            RecipeId = 3,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 470,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 20.52m,
-                            RecipeId = 7,
-                            UnitMeasure = 1
+                            IngredientId = 6,
+                            Quantity = 48m,
+                            RecipeId = 26,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 471,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 34.13m,
-                            RecipeId = 10,
+                            IngredientId = 8,
+                            Quantity = 49m,
+                            RecipeId = 24,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 472,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 48.72m,
-                            RecipeId = 1,
-                            UnitMeasure = 2
+                            IngredientId = 5,
+                            Quantity = 14m,
+                            RecipeId = 48,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 473,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 47.49m,
+                            IngredientId = 2,
+                            Quantity = 88m,
                             RecipeId = 31,
-                            UnitMeasure = 1
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 474,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 23.96m,
-                            RecipeId = 8,
-                            UnitMeasure = 3
+                            IngredientId = 6,
+                            Quantity = 85m,
+                            RecipeId = 43,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 475,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 40.4m,
-                            RecipeId = 19,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 67m,
+                            RecipeId = 25,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 476,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 24.09m,
-                            RecipeId = 43,
+                            Quantity = 42m,
+                            RecipeId = 9,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 477,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 5.85m,
-                            RecipeId = 7,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 50m,
+                            RecipeId = 19,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 478,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 19.81m,
-                            RecipeId = 22,
-                            UnitMeasure = 3
+                            IngredientId = 9,
+                            Quantity = 60m,
+                            RecipeId = 8,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 479,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 13.75m,
-                            RecipeId = 2,
+                            IngredientId = 3,
+                            Quantity = 13m,
+                            RecipeId = 15,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 480,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 2.01m,
-                            RecipeId = 23,
-                            UnitMeasure = 0
+                            IngredientId = 5,
+                            Quantity = 68m,
+                            RecipeId = 15,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 481,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 22.77m,
+                            IngredientId = 2,
+                            Quantity = 38m,
                             RecipeId = 48,
-                            UnitMeasure = 2
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 482,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 5,
-                            Quantity = 14.93m,
-                            RecipeId = 17,
-                            UnitMeasure = 1
+                            Quantity = 65m,
+                            RecipeId = 35,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 483,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 43.85m,
-                            RecipeId = 23,
+                            IngredientId = 3,
+                            Quantity = 35m,
+                            RecipeId = 38,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 484,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 6.54m,
-                            RecipeId = 37,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 22m,
+                            RecipeId = 47,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 485,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 8,
-                            Quantity = 33.2m,
-                            RecipeId = 18,
-                            UnitMeasure = 2
+                            IngredientId = 6,
+                            Quantity = 64m,
+                            RecipeId = 24,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 486,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 6,
-                            Quantity = 3.78m,
-                            RecipeId = 29,
+                            IngredientId = 8,
+                            Quantity = 88m,
+                            RecipeId = 1,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 487,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 23.74m,
-                            RecipeId = 25,
-                            UnitMeasure = 3
+                            IngredientId = 2,
+                            Quantity = 38m,
+                            RecipeId = 32,
+                            UnitMeasure = 2
                         },
                         new
                         {
                             Id = 488,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 17.22m,
-                            RecipeId = 25,
-                            UnitMeasure = 2
+                            IngredientId = 1,
+                            Quantity = 84m,
+                            RecipeId = 26,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 489,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 5,
-                            Quantity = 23.8m,
-                            RecipeId = 49,
-                            UnitMeasure = 0
+                            IngredientId = 1,
+                            Quantity = 41m,
+                            RecipeId = 16,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 490,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 20.13m,
+                            IngredientId = 2,
+                            Quantity = 23m,
                             RecipeId = 10,
                             UnitMeasure = 3
                         },
@@ -5180,27 +5127,27 @@ namespace NormativeApp.Database.Migrations
                         {
                             Id = 491,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 24.34m,
-                            RecipeId = 45,
-                            UnitMeasure = 1
+                            IngredientId = 9,
+                            Quantity = 52m,
+                            RecipeId = 4,
+                            UnitMeasure = 3
                         },
                         new
                         {
                             Id = 492,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 9,
-                            Quantity = 12.05m,
-                            RecipeId = 9,
+                            IngredientId = 1,
+                            Quantity = 75m,
+                            RecipeId = 35,
                             UnitMeasure = 1
                         },
                         new
                         {
                             Id = 493,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 4,
-                            Quantity = 25.19m,
-                            RecipeId = 37,
+                            IngredientId = 1,
+                            Quantity = 32m,
+                            RecipeId = 8,
                             UnitMeasure = 2
                         },
                         new
@@ -5208,7 +5155,7 @@ namespace NormativeApp.Database.Migrations
                             Id = 494,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IngredientId = 4,
-                            Quantity = 7.95m,
+                            Quantity = 65m,
                             RecipeId = 47,
                             UnitMeasure = 1
                         },
@@ -5216,55 +5163,55 @@ namespace NormativeApp.Database.Migrations
                         {
                             Id = 495,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 44.94m,
-                            RecipeId = 16,
+                            IngredientId = 7,
+                            Quantity = 56m,
+                            RecipeId = 17,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 496,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 3,
-                            Quantity = 43.9m,
-                            RecipeId = 41,
+                            IngredientId = 1,
+                            Quantity = 97m,
+                            RecipeId = 9,
                             UnitMeasure = 2
                         },
                         new
                         {
                             Id = 497,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 46.92m,
-                            RecipeId = 33,
+                            IngredientId = 3,
+                            Quantity = 31m,
+                            RecipeId = 21,
                             UnitMeasure = 3
                         },
                         new
                         {
                             Id = 498,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 7.74m,
-                            RecipeId = 12,
-                            UnitMeasure = 2
+                            IngredientId = 2,
+                            Quantity = 81m,
+                            RecipeId = 37,
+                            UnitMeasure = 0
                         },
                         new
                         {
                             Id = 499,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 2,
-                            Quantity = 15.18m,
-                            RecipeId = 27,
-                            UnitMeasure = 3
+                            IngredientId = 7,
+                            Quantity = 25m,
+                            RecipeId = 21,
+                            UnitMeasure = 1
                         },
                         new
                         {
                             Id = 500,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IngredientId = 1,
-                            Quantity = 14.29m,
-                            RecipeId = 30,
-                            UnitMeasure = 0
+                            IngredientId = 9,
+                            Quantity = 93m,
+                            RecipeId = 17,
+                            UnitMeasure = 2
                         });
                 });
 
@@ -5292,8 +5239,8 @@ namespace NormativeApp.Database.Migrations
                         new
                         {
                             Id = 1,
-                            PasswordHash = new byte[] { 130, 230, 110, 223, 78, 5, 81, 29, 236, 154, 163, 194, 76, 30, 162, 175, 122, 126, 139, 222, 182, 206, 38, 238, 225, 150, 234, 12, 14, 162, 59, 9, 138, 115, 139, 139, 168, 207, 187, 117, 178, 217, 8, 88, 123, 223, 110, 170, 252, 82, 131, 148, 76, 187, 77, 83, 131, 205, 20, 165, 148, 220, 23, 23 },
-                            PasswordSalt = new byte[] { 83, 148, 42, 10, 208, 218, 214, 125, 182, 166, 70, 197, 255, 225, 135, 227, 32, 6, 85, 182, 124, 137, 230, 26, 175, 85, 244, 185, 138, 145, 242, 196, 67, 82, 155, 235, 196, 97, 39, 39, 55, 76, 35, 131, 37, 151, 57, 14, 196, 43, 211, 173, 44, 80, 184, 78, 42, 252, 147, 90, 118, 113, 87, 73, 173, 215, 254, 68, 80, 255, 229, 236, 57, 13, 247, 87, 28, 97, 177, 251, 65, 137, 3, 53, 62, 171, 86, 143, 206, 242, 241, 207, 228, 157, 147, 199, 150, 132, 41, 161, 129, 6, 247, 123, 136, 183, 180, 34, 107, 225, 86, 225, 1, 118, 140, 15, 149, 161, 38, 32, 112, 236, 210, 168, 225, 147, 44, 169 },
+                            PasswordHash = new byte[] { 164, 201, 217, 188, 136, 240, 202, 196, 240, 83, 104, 201, 83, 29, 56, 117, 227, 29, 199, 119, 24, 32, 103, 26, 254, 204, 226, 203, 100, 181, 165, 199, 122, 42, 182, 60, 233, 66, 6, 148, 22, 166, 161, 81, 123, 72, 50, 214, 153, 201, 211, 19, 135, 69, 254, 53, 98, 83, 156, 175, 93, 140, 71, 79 },
+                            PasswordSalt = new byte[] { 47, 91, 248, 247, 16, 73, 61, 32, 161, 221, 29, 14, 164, 37, 225, 101, 28, 106, 187, 153, 203, 204, 153, 132, 227, 173, 139, 98, 11, 31, 156, 194, 63, 140, 97, 10, 213, 203, 20, 106, 101, 16, 203, 233, 118, 242, 217, 237, 92, 155, 155, 37, 74, 122, 64, 128, 68, 106, 239, 139, 87, 190, 91, 96, 200, 37, 243, 114, 95, 240, 207, 67, 222, 56, 254, 71, 17, 171, 252, 13, 212, 8, 28, 138, 214, 143, 98, 213, 209, 101, 242, 54, 125, 231, 192, 87, 64, 255, 99, 135, 104, 64, 181, 38, 31, 109, 79, 166, 69, 181, 143, 93, 93, 32, 55, 196, 233, 182, 241, 121, 211, 77, 90, 233, 43, 38, 153, 4 },
                             Username = "admin"
                         });
                 });

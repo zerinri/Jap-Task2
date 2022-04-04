@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace NormativeApp.Core.Interfaces
 {
-    public interface ISqlService
+    public interface IRecipeReports
     {
         Task<ServiceResponse<List<MostUsedIngredient>>> GetMostUsedIngredients(decimal minCount, decimal maxCount, int unitMeasure);
         Task<ServiceResponse<List<GetRecipesByCategoryName>>> GetRecipesByCategoryName();

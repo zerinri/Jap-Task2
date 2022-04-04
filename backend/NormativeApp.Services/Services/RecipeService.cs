@@ -31,15 +31,12 @@ namespace NormativeApp.Services
 
             if (recipe.RecipeIngredients.GroupBy(x => x.IngredientId).Any(x => x.Count() > 1))
             {
-
                 throw new ArgumentException("Only one ingredient of the same type!");
-
             }
+
             if (recipe.RecipeIngredients.Count() == 0)
             {
-
                 throw new ArgumentException("Must add at least one ingredient!");
-
             }
 
             var newRecipe = new Recipe()

@@ -1,9 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NormativeApp.Common.Entities;
+﻿using NormativeApp.Common.Entities;
 using NormativeApp.Core.Entities;
 using NormativeApp.Services.Helpers;
 using NUnit.Framework;
-using System;
 using System.Collections.Generic;
 using Assert = NUnit.Framework.Assert;
 
@@ -26,7 +24,7 @@ namespace NormativeApp.Tests
                     Quantity = 10,
                     Ingredient = new Ingredient
                     {
-                        Name="NewIngredient",
+                        Name = "NewIngredient",
                         PurchaseQuantity = 10,
                         PurchasePrice = 10,
                         PurchaseUnitMeasure = UnitMeasureEnum.kg,

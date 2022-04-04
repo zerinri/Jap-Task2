@@ -14,8 +14,7 @@ namespace NormativeApp.Api.Extensions
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IIngredientService, IngredientService>();
             services.AddScoped<IRecipeService, RecipeService>();
-            services.AddScoped<ISqlService, SqlService>();
+            services.AddScoped<IRecipeReports, RecipeReportsService>();
         }
-
     }
 }
